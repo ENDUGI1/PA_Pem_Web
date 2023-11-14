@@ -147,12 +147,13 @@
 
 
     <!-- barang ready Section Start -->
-    <section class="stocks" id="stocks"></section>
-    <h2><span>Available</span>Products</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-        blanditiis laboriosam consequatur error deserunt facere?
+    <section class="stocks" id="stocks">
+      <h2><span>Available</span>Products</h2>
+      <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              blanditiis laboriosam consequatur error deserunt facere?
       </p>
+    </section>
     <!-- barang read Section End -->
 
 
