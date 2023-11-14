@@ -1,5 +1,5 @@
 # PROJEK AKHIR PEMROGRAMAN WEB
-- Nama Website : Namanya
+- Judul Program : Toko Pakaian / Hattrick Clothes
 - Anggota Kelompok :
     - Ahmad Nur Fauzan
     - Umar Farauk Eka Putra
