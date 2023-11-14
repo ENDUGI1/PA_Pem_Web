@@ -17,8 +17,8 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="style3.css" />
-    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="search.css" /> -->
   </head>
   <body>
     <!-- navbar start -->
@@ -27,18 +27,19 @@
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">About us</a>
-        <a href="#catalog">Catalog</a>
+        <a href="#catalog">Products</a>
+        <a href="#stocks">Catalogs</a>
         <a href="#contact">Contact</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="keranjang"><i data-feather="shopping-bag"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-bag"></i></a>
         <a href="#" button class="lightMode" onclick="ubahWarna()"
           ><i data-feather="moon"> </i><i data-feather="sun"></i
         ></a>
         <a href="login.php" id="login"><i data-feather="log-in"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-        <a href="#" id="search-button"><i data-feather="search"></i></a>
       </div>
 
       <!-- Search Form Start -->
@@ -47,6 +48,37 @@
         <label for="search-box"><i data-feather ="search"></i></label>
       </div>
       <!-- Search Form End -->
+
+
+      <!-- Shopping cart Start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src=img/clothes/clothes2.jpg alt="clothes1">
+          <div class="item-detail">
+            <h3>Clothes1</h3>
+            <div class="item-price">IDR 130K </div>
+          </div>
+          <i data-feather="trash-2" class = "remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src=img/clothes/clothes2.jpg alt="clothes1">
+          <div class="item-detail">
+            <h3>Clothes1</h3>
+            <div class="item-price">IDR 130K </div>
+          </div>
+          <i data-feather="trash-2" class = "remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src=img/clothes/clothes2.jpg alt="clothes1">
+          <div class="item-detail">
+            <h3>Clothes1</h3>
+            <div class="item-price">IDR 130K </div>
+          </div>
+          <i data-feather="trash-2" class = "remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping cart End -->
+
     </nav>
 
     <!-- Navbar end -->
@@ -147,12 +179,36 @@
 
 
     <!-- barang ready Section Start -->
-    <section class="stocks" id="stocks">
-      <h2><span>Available</span>Products</h2>
+    <section class="clothes" id="clothes">
+      <h2><span>Available </span>Clothes</h2>
       <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              blanditiis laboriosam consequatur error deserunt facere?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Alias beatae perferendis consequuntur molestiae.
       </p>
+
+      <div class = "row">
+        <div class ="clothes-card">
+          <div class="clothes-icons">
+            <a href="#"><i data-feather= "shopping-bag"></i></a>
+            <a href="#"><i data-feather= "eye"></i></a>
+          </div>
+          <div class="clothes-image">
+            <img src="img/clothes/clothes1.jpg" alt="Clothes 1" >
+          </div>
+          <div class="clothes-content">
+            <h3>T-shirt Music Art </h3>
+            <div class=clothes-stars>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star"></i>
+            </div>
+            <div class="clothes-price">IDR 130K <span>IDR 150K </span> </div>
+          </div>
+        </div>
+      </div>
+
     </section>
     <!-- barang read Section End -->
 
@@ -217,7 +273,7 @@
       </div>
 
       <div class="credit">
-        <p>Created By <a href="">Ahmad Nur Fauzan</a>. | &copy; 2023.</p>
+        <p>Created By <a href="">B1 KEL 5</a>. | &copy; 2023.</p>
       </div>
     </footer>
     <!-- Footer End -->
@@ -229,7 +285,7 @@
 
     <!-- Javascript -->
     <script src="script.js"></script>
-    <script src="search.js"></script>
+    
 
   </body>
 </html>

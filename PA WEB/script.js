@@ -12,7 +12,7 @@ document.querySelector("#hamburger-menu").onclick = () => {
   navbarNav.classList.toggle("activate");
 };
 
-// Toggle Class activate Search Form (dipindahhkan ke js yang baru karna adanya bug)
+// Toggle Class activate Search Form
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
 
@@ -22,9 +22,17 @@ document.querySelector("#search-button").onclick = (e) => {
   e.preventDefault();
 };
 
+// Toggle Class activate Shopping Cart
+const shoppingCart = document.querySelector(".shopping-cart");
+document.querySelector("#shopping-cart-button").onclick = (e) => {
+  shoppingCart.classList.toggle("active");
+  e.preventDefault();
+};
+
 //klik diluar sidebar untuk menghilangkan nav
 const hamburger = document.querySelector("#hamburger-menu");
 const sb = document.querySelector("#search-button");
+const scb = document.querySelector("#shopping-cart-button");
 
 document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
