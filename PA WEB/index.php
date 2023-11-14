@@ -26,7 +26,7 @@
       <a href="#" class="navbar-logo">HATTRICK<span> CLOTHES</span>.</a>
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#about">About me</a>
+        <a href="#about">About us</a>
         <a href="#catalog">Catalog</a>
         <a href="#contact">Contact</a>
       </div>
@@ -68,7 +68,7 @@
     <!-- About Section Start -->
 
     <section id="about" class="about">
-      <h2><span>About</span> Me</h2>
+      <h2><span>About</span> Us</h2>
 
       <div class="row">
         <div class="about-img">
@@ -198,7 +198,7 @@
 
       <div class="links">
         <a href="#home">Home</a>
-        <a href="#about">About Me</a>
+        <a href="#about">About Us</a>
         <a href="#catalog">Catalogs</a>
         <a href="#contact">Contact</a>
       </div>

@@ -128,7 +128,7 @@ if (isset($_POST['tambah'])) {
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" class="textfield">
                 <label for="harga">harga</label>
-                <input type="text" name="harga" class="textfield">
+                <input type="number" name="harga" class="textfield">
                 <label for="warna">warna</label>
                 <input type="text" name="warna" class="textfield">
                 <label for="ukuran">ukuran</label>

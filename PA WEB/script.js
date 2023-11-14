@@ -35,8 +35,6 @@ document.addEventListener("click", function (e) {
   }
 });
 
-alert("Welcome To Ours Store, Friends");
-
 const tombol = document.getElementById("tombol");
 tombol.addEventListener("click", function () {
   tombol.textContent = "Coming soon!";

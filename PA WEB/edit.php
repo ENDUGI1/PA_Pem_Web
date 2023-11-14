@@ -25,8 +25,8 @@ if (isset($_POST['edit'])) {
     $harga = $_POST['harga'];
     $warna = $_POST['warna'];
     $ukuran = $_POST['ukuran'];
-    $gambar = $_POST['gambar'];
-    
+    // $gambar = $_POST['gambar'];
+    $date=date('Y-m-d');
     //upload gambar
     $img = $_FILES['gambar']['name'];
     $explode = explode(',',$img);
@@ -146,7 +146,7 @@ if (isset($_POST['edit'])) {
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" value="<?php echo $data_baju['nama']?>" class="textfield" required>
                 <label for="harga">harga</label>
-                <input type="text" name="harga" value="<?php echo $data_baju['harga']?>" class="textfield" required >
+                <input type="number" name="harga" value="<?php echo $data_baju['harga']?>" class="textfield" required >
                 <label for="warna">warna</label>
                 <input type="text" name="warna" value="<?php echo $data_baju['warna']?>" class="textfield" required>
                 <label for="ukuran">ukuran</label>

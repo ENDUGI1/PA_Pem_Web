@@ -8,18 +8,32 @@ require 'koneksi.php';
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
+    if ($username == 'admin' && $password == 'admin') {
+      echo "
+      <script>
+          alert('Login Sebagai Admin !');
+          document.location.href = 'dashboard.php';
+      </script>
+  ";
+    }
     $result = mysqli_query($conn, "SELECT * FROM data_akun WHERE username = '$username'");
 
     if (mysqli_num_rows($result) === 1) {
         $row = mysqli_fetch_assoc($result);
         
         var_dump($row);
+
         if (password_verify($password, $row['password'])) {
             $_SESSION['login'] = true;
             $_SESSION['username'] = $row['username'];
-            header('Location: dashboard.php');
+            echo "
+            <script>
+                alert('Login Sebagai User!');
+                document.location.href = 'index.php';
+            </script>
+        ";
             exit;
+
         }
     }
     $error = true;
