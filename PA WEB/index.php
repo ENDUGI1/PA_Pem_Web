@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style3.css" />
     <link rel="stylesheet" href="search.css" />
   </head>
   <body>
@@ -92,7 +92,7 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Menu Section Start -->
+    <!-- Products Section Start -->
     <section id="catalog" class="catalog">
       <h2><span>Our</span> Products</h2>
       <p>
@@ -143,7 +143,19 @@
         </div>
       </div>
     </section>
-    <!-- Menu Section End -->
+    <!-- Products Section End -->
+
+
+    <!-- barang ready Section Start -->
+    <section class="stocks" id="stocks"></section>
+    <h2><span>Available</span>Products</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        blanditiis laboriosam consequatur error deserunt facere?
+      </p>
+    <!-- barang read Section End -->
+
+
 
     <!-- Contact Section Start -->
     <section id="contact" class="contact">

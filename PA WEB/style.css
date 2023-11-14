@@ -175,12 +175,14 @@ body {
 
 .about,
 .catalog,
+.stocks,
 .contact {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .catalog h2,
+.stocks h2,
 .contact h2 {
   text-align: center;
   font-size: 2.6rem;
@@ -189,6 +191,7 @@ body {
 
 .about h2 span,
 .catalog h2 span,
+.stocks h2 span,
 .contact h2 span {
   color: #ee8896;
   transition: background-color 0.5s ease;
