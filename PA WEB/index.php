@@ -190,7 +190,27 @@
         <div class ="clothes-card">
           <div class="clothes-icons">
             <a href="#"><i data-feather= "shopping-bag"></i></a>
-            <a href="#"><i data-feather= "eye"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
+          </div>
+          <div class="clothes-image">
+            <img src="img/clothes/clothes1.jpg" alt="Clothes 1" >
+          </div>
+          <div class="clothes-content">
+            <h3>T-shirt Music Art </h3>
+            <div class=clothes-stars>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star"></i>
+            </div>
+            <div class="clothes-price">IDR 130K <span>IDR 150K </span> </div>
+          </div>
+        </div>
+        <div class ="clothes-card">
+          <div class="clothes-icons">
+            <a href="#"><i data-feather= "shopping-bag"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
           </div>
           <div class="clothes-image">
             <img src="img/clothes/clothes1.jpg" alt="Clothes 1" >
@@ -278,6 +298,36 @@
     </footer>
     <!-- Footer End -->
 
+
+
+    <!-- Modal Box Item Detail Start -->
+<div class="modal" id="item-detail-modal">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/clothes/clothes2.jpg"alt="Clothes 1">
+      <div class="clothes-content">
+        <h3>Clothes 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Culpa quisquam alias nam, recusandae nostrum esse,
+            rem praesentium, distinctio ad minus accusamus eius maiores tempore sed?</p>
+            <div class=clothes-stars>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star"></i>
+            </div>
+            <div class="clothes-price">IDR 130K <span>IDR 150K </span> </div>
+            <a href="#"><i data-feather="shopping-bag"></i> <span>add to cart</span></a>
+      </div>
+    </div> 
+  </div>
+</div>
+    <!-- Modal Box Item Detail End -->
+
+
+
     <!-- Feather icon -->
     <script>
       feather.replace();
@@ -286,6 +336,6 @@
     <!-- Javascript -->
     <script src="script.js"></script>
     
-
+  
   </body>
 </html>

@@ -30,9 +30,10 @@ document.querySelector("#shopping-cart-button").onclick = (e) => {
 };
 
 //klik diluar sidebar untuk menghilangkan nav
+// MASIH ERROR UNTUK SEARCH BUTTON DAN SHOPPING CART
 const hamburger = document.querySelector("#hamburger-menu");
 const sb = document.querySelector("#search-button");
-const scb = document.querySelector("#shopping-cart-button");
+const sc = document.querySelector("#shopping-cart-button");
 
 document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
@@ -40,6 +41,14 @@ document.addEventListener("click", function (e) {
   }
   if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
     searchForm.classList.remove("activate");
+  }
+  if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
+    shoppingCart.classList.remove("activate");
+  }
+});
+document.addEventListener("click", function (e) {
+  if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
+    shoppingCart.classList.remove("activate");
   }
 });
 
@@ -66,3 +75,29 @@ button1.addEventListener("click", function () {
     window.open("https://www.instagram.com/anfauzan_/?hl=id", "_blank");
   }
 });
+
+//Modal Box
+
+const itemDetailModal = document.querySelector("#item-detail-modal");
+const itemDetailButtons = document.querySelectorAll(".item-detail-button");
+
+itemDetailButtons.forEach((btn) => {
+  btn.onclick = (e) => {
+    itemDetailModal.style.display = "flex"; //merubah yang awalanya display dari modal kita none berubah menjadi flex(muncul)
+    e.preventDefault();
+  };
+});
+
+//klik tombol close modal
+document.querySelector(".modal .close-icon").onclick = (e) => {
+  itemDetailModal.style.display = "none";
+  e.preventDefault();
+};
+
+//klik di luar modal
+
+window.onclick = (e) => {
+  if (e.target === itemDetailModal) {
+    itemDetailModal.style.display = "none";
+  }
+};
