@@ -144,15 +144,15 @@ if (isset($_POST['edit'])) {
             <h1>Edit Data</h1><hr><br>
             <form action="" method="post" enctype="multipart/form-data">
                 <label for="nama">Nama</label>
-                <input type="text" name="nama" value="<?php echo $data_baju['nama']?>" class="textfield">
+                <input type="text" name="nama" value="<?php echo $data_baju['nama']?>" class="textfield" required>
                 <label for="harga">harga</label>
-                <input type="text" name="harga" value="<?php echo $data_baju['harga']?>" class="textfield">
+                <input type="text" name="harga" value="<?php echo $data_baju['harga']?>" class="textfield" required >
                 <label for="warna">warna</label>
-                <input type="text" name="warna" value="<?php echo $data_baju['warna']?>" class="textfield">
+                <input type="text" name="warna" value="<?php echo $data_baju['warna']?>" class="textfield" required>
                 <label for="ukuran">ukuran</label>
-                <input type="text" name="ukuran" value="<?php echo $data_baju['ukuran']?>" class="textfield">
+                <input type="text" name="ukuran" value="<?php echo $data_baju['ukuran']?>" class="textfield" required>
                 <label for="gambar">Upload Gambar</label>
-                <input type="file" name="gambar" value="<?php echo $data_baju['gambar']?>" class="textfield">
+                <input type="file" name="gambar" value="<?php echo $data_baju['gambar']?>" class="textfield" required>
                 <input type="submit" name="edit" value="Edit Data" class="login-btn">
             </form>
         </div>

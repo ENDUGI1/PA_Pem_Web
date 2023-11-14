@@ -94,7 +94,7 @@
 
     <!-- Menu Section Start -->
     <section id="catalog" class="catalog">
-      <h2><span>Our</span> Catalogs</h2>
+      <h2><span>Our</span> Products</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore
         fugit, provident fuga

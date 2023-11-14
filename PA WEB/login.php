@@ -149,9 +149,9 @@ if (isset($_POST['login'])) {
             <label for="password">Password</label>
           </div>
           <button class="btn" name="login">Login</button>
-          <button class="btn">Forget Password ?</button>
+          <!-- <button class="btn">Forget Password ?</button> -->
           <a class="link" href="index.php">Back To Store</a><br/>
-          <a class="link" href="dashboard.php">I'm Admin</a>
+          <!-- <a class="link" href="dashboard.php">I'm Admin</a> -->
           <i class="bx bx-left-arrow-alt RegisterBtn"></i>
         </form>
       </div>
