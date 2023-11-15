@@ -15,6 +15,7 @@ while ($row = mysqli_fetch_assoc($result)){
 $data_baju = $data_baju[0];
 
 
+$get_gambar = mysqli_query($conn, "SELECT gambar FROM data_baju WHERE id = $id");
 
 
 
@@ -33,6 +34,11 @@ if (isset($_POST['edit'])) {
     $ekstensi = strtolower(end($explode));
     $gambar_baru = "$date.$nama.$ekstensi";
     $tmp = $_FILES['gambar']['tmp_name'];
+
+
+        
+        $data_old = mysqli_fetch_array($get_gambar);
+        unlink("img/assets/".$data_old['gambar']);
 
     if (move_uploaded_file($tmp,'img/assets/'.$gambar_baru)) {
         $result = mysqli_query($conn, "UPDATE data_baju SET nama = '$nama', harga='$harga', warna='$warna', ukuran = '$ukuran', gambar='$gambar_baru' WHERE id = '$id' ");

@@ -1,3 +1,17 @@
+<?php
+
+require 'koneksi.php';
+
+$result = mysqli_query($conn, "SELECT * FROM data_baju");
+
+$data_baju = [];
+
+while ($row = mysqli_fetch_assoc($result)){
+    $data_baju[] = $row;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -187,7 +201,29 @@
       </p>
 
       <div class = "row">
+      <?php $i = 1; foreach($data_baju as $data_baju) :?>
         <div class ="clothes-card">
+          <div class="clothes-icons">
+            <a href="#"><i data-feather= "shopping-bag"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
+          </div>
+          <div class="clothes-image">
+            <img src="img/assets/<?php echo $data_baju['gambar']?>" alt="Clothes 1" >
+          </div>
+          <div class="clothes-content">
+            <h3><?php echo $data_baju['nama']?></h3>
+            <div class=clothes-stars>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star" class = star-full></i>
+              <i data-feather = "star"></i>
+            </div>
+            <div class="clothes-price">Rp.<?php echo number_format($data_baju['harga'])?></div>
+          </div>
+        </div>
+        <?php endforeach ?>
+        <!-- <div class ="clothes-card">
           <div class="clothes-icons">
             <a href="#"><i data-feather= "shopping-bag"></i></a>
             <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
@@ -206,27 +242,7 @@
             </div>
             <div class="clothes-price">IDR 130K <span>IDR 150K </span> </div>
           </div>
-        </div>
-        <div class ="clothes-card">
-          <div class="clothes-icons">
-            <a href="#"><i data-feather= "shopping-bag"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
-          </div>
-          <div class="clothes-image">
-            <img src="img/clothes/clothes2.jpg" alt="Clothes 1" >
-          </div>
-          <div class="clothes-content">
-            <h3>T-shirt Music Art </h3>
-            <div class=clothes-stars>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star"></i>
-            </div>
-            <div class="clothes-price">IDR 130K <span>IDR 150K </span> </div>
-          </div>
-        </div>
+        </div> -->
       </div>
 
     </section>

@@ -128,13 +128,13 @@ if (isset($_POST['tambah'])) {
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" class="textfield">
                 <label for="harga">harga</label>
-                <input type="number" name="harga" class="textfield">
+                <input type="number" name="harga" class="textfield" min="10000">
                 <label for="warna">warna</label>
                 <input type="text" name="warna" class="textfield">
                 <label for="ukuran">ukuran</label>
                 <input type="text" name="ukuran" class="textfield">
                 <label for="gambar">Upload Gambar</label>
-                <input type="file" name="gambar" id=""><br>
+                <input type="file" name="gambar" accept="image/*" ><br>
                 <input type="submit" name="tambah" value="Tambah Data" class="login-btn">
             </form>
         </div>
