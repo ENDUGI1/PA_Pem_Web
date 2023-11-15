@@ -34,9 +34,23 @@ if (isset($_POST['login'])) {
             </script>";
             exit;
           }
+        } else{
+            echo "
+            <script>
+                alert('Kata sandi salah!');
+                document.location.href = 'login.php';
+            </script>";
+            exit;
         }
+    } else{
+        echo "
+        <script>
+            alert('Username tidak ditemukan!');
+            document.location.href = 'login.php';
+        </script>";
+        exit;
     }
-    $error = true;
+    //$error = true;
 }
 
 ?>
