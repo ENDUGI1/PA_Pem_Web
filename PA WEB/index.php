@@ -12,6 +12,36 @@ while ($row = mysqli_fetch_assoc($result)){
 
 ?>
 
+<!-- php untuk nambahin kontak -->
+<?php
+  require 'koneksi.php';
+  if (isset($_POST['kontak'])) {
+    # code...
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+    $nomor_hp = $_POST['nomor_hp'];
+    $pesan = $_POST['pesan'];
+
+    $result = mysqli_query($conn, "INSERT INTO data_kontak VALUES ('', '$nama', '$email', '$nomor_hp', '$pesan')");
+    if ($result) {
+      echo "
+          <script>
+              alert('Pesan berhasil ditambahkan!');
+              document.location.href = 'index.php';
+          </script>
+      ";
+    } else {
+        echo "
+            <script>
+                alert('Gagal menambahkan Pesan. Silakan coba lagi.');
+                document.location.href = 'index.php';
+            </script>
+        ";
+    }
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -249,24 +279,25 @@ while ($row = mysqli_fetch_assoc($result)){
 
 
         <!-- Tabel Ketiga Ada disini yahhh -->
-        <form action="">
+        <!-- ada di edit beberapa agar bisa di kenali php saat di masukkan ke database -->
+        <form action="" method="post">
           <div class="input-group">
             <i data data-feather="user"></i>
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Name" name="nama" required/>
           </div>
           <div class="input-group">
             <i data data-feather="mail"></i>
-            <input type="text" placeholder="Email" />
+            <input type="email" placeholder="Email" name="email" required/>
           </div>
           <div class="input-group">
             <i data data-feather="phone"></i>
-            <input type="text" placeholder="Num HP" />
+            <input type="number" placeholder="Num HP" name="nomor_hp" required/>
           </div>
           <div class="input-group-msg">
             <i data data-feather="message-square"></i>
-            <input type="text" placeholder="Message" />
+            <input type="text" placeholder="Message" name="pesan" required/>
           </div>
-          <button type="submit" class="btn">Send Message</button>
+          <button type="submit" class="btn" name="kontak">Send Message</button>
         </form>
       </div>
     </section>

@@ -204,6 +204,7 @@ while ($row = mysqli_fetch_assoc($result)){
                 <p>Today: <?php echo date("l, d F Y, H:i:s T"); ?></p>
                 <hr><br>
                 <div class="leading-btn">
+                    <a href = "kontak.php"><button class="add-btn">Lihat Pesan</button></a>
                     <a href = "tambah.php"><button class="add-btn">Tambah</button></a>
                     <a href = "logout.php"><button class="add-btn">Logout</button></a>
                 </div><br>
