@@ -266,6 +266,8 @@ while ($row = mysqli_fetch_assoc($result)){
           class="map"
         ></iframe>
 
+
+        //Tabel Ke 3 Ada disini:
         <form action="">
           <div class="input-group">
             <i data data-feather="user"></i>
@@ -278,6 +280,10 @@ while ($row = mysqli_fetch_assoc($result)){
           <div class="input-group">
             <i data data-feather="phone"></i>
             <input type="text" placeholder="Num HP" />
+          </div>
+          <div class="input-group-msg">
+            <i data data-feather="message-square"></i>
+            <input type="text" placeholder="Message" />
           </div>
           <button type="submit" class="btn">Send Message</button>
           <!-- <div class="popup">
