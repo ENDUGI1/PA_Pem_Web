@@ -127,6 +127,7 @@ while ($row = mysqli_fetch_assoc($result)){
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            gap: 1rem;
         }
 
         .add-btn, .history-btn {
@@ -184,6 +185,53 @@ while ($row = mysqli_fetch_assoc($result)){
         .edit-btn:hover, .delete-btn:hover {
             background-color: #555;
         }
+
+            /* Media Queries Responsif */
+
+
+                    @media (max-width: 1366px) {
+            html {
+                font-size: 75%;
+            }
+        }
+
+
+
+        @media (max-width: 768px) {
+        html {
+            font-size: 62.5%; /* Mengatur ulang ukuran font */
+        }
+
+        /* Mengubah tampilan sidebar */
+        .dash-side-bar {
+            display: none;
+        }
+
+        /* Mengatur tata letak utama untuk menyesuaikan lebar layar */
+        .dash-container {
+            width: 100%;
+            padding: 10px;
+        }
+
+        /* Mengubah tampilan tombol untuk tata letak vertikal */
+        .leading-btn {
+            flex-direction: column;
+        }
+    }
+
+    /* Media query untuk layar dengan lebar kurang dari atau sama dengan 450px */
+    @media (max-width: 450px) {
+        html {
+            font-size: 55%; /* Mengatur ulang ukuran font untuk layar yang lebih kecil */
+        }
+
+        /* Menampilkan kembali gambar di dalam tabel pada layar kecil */
+        table td img {
+            display: block;
+            max-width: 100%; /* Membuat gambar tidak melebihi lebar parent */
+            height: auto; /* Menjaga aspek rasio gambar */
+        }
+    }
     </style>
 
 </head>
