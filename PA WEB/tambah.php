@@ -1,7 +1,8 @@
 <?php
 session_start();
-if (!isset($_SESSION['login'])){
+if (!isset($_SESSION['login']) || ($_SESSION['login'] !== true) || (isset($_SESSION['username']) && $_SESSION['username'] !== 'admin')){
     header('Location: index.php');
+    exit();
 }
 
 require 'koneksi.php';
@@ -126,15 +127,15 @@ if (isset($_POST['tambah'])) {
             <h1>Tambah Data</h1><hr><br>
             <form action="" method="post" enctype="multipart/form-data">
                 <label for="nama">Nama</label>
-                <input type="text" name="nama" class="textfield">
+                <input type="text" name="nama" class="textfield" required>
                 <label for="harga">harga</label>
-                <input type="number" name="harga" class="textfield" min="10000">
+                <input type="number" name="harga" class="textfield" min="10000" required>
                 <label for="warna">warna</label>
-                <input type="text" name="warna" class="textfield">
+                <input type="text" name="warna" class="textfield" required>
                 <label for="ukuran">ukuran</label>
-                <input type="text" name="ukuran" class="textfield">
+                <input type="text" name="ukuran" class="textfield" required>
                 <label for="gambar">Upload Gambar</label>
-                <input type="file" name="gambar" accept="image/*" ><br>
+                <input type="file" name="gambar" accept="image/*" required><br>
                 <input type="submit" name="tambah" value="Tambah Data" class="login-btn">
             </form>
         </div>

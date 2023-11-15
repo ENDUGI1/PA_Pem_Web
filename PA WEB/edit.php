@@ -1,7 +1,8 @@
 <?php
 session_start();
-if (!isset($_SESSION['login'])){
+if (!isset($_SESSION['login']) || ($_SESSION['login'] !== true) || (isset($_SESSION['username']) && $_SESSION['username'] !== 'admin')){
     header('Location: index.php');
+    exit();
 }
 require "koneksi.php";
 $id = $_GET['id'];
@@ -37,8 +38,8 @@ if (isset($_POST['edit'])) {
 
 
         
-        $data_old = mysqli_fetch_array($get_gambar);
-        unlink("img/assets/".$data_old['gambar']);
+    $data_old = mysqli_fetch_array($get_gambar);
+    unlink("img/assets/".$data_old['gambar']);
 
     if (move_uploaded_file($tmp,'img/assets/'.$gambar_baru)) {
         $result = mysqli_query($conn, "UPDATE data_baju SET nama = '$nama', harga='$harga', warna='$warna', ukuran = '$ukuran', gambar='$gambar_baru' WHERE id = '$id' ");
@@ -152,13 +153,13 @@ if (isset($_POST['edit'])) {
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" value="<?php echo $data_baju['nama']?>" class="textfield" required>
                 <label for="harga">harga</label>
-                <input type="number" name="harga" value="<?php echo $data_baju['harga']?>" class="textfield" required >
+                <input type="number" name="harga" value="<?php echo $data_baju['harga']?>" class="textfield" min="10000"required >
                 <label for="warna">warna</label>
                 <input type="text" name="warna" value="<?php echo $data_baju['warna']?>" class="textfield" required>
                 <label for="ukuran">ukuran</label>
                 <input type="text" name="ukuran" value="<?php echo $data_baju['ukuran']?>" class="textfield" required>
                 <label for="gambar">Upload Gambar</label>
-                <input type="file" name="gambar" value="<?php echo $data_baju['gambar']?>" class="textfield" required>
+                <input type="file" name="gambar" value="<?php echo $data_baju['gambar']?>" accept="image/*" class="textfield" required>
                 <input type="submit" name="edit" value="Edit Data" class="login-btn">
             </form>
         </div>

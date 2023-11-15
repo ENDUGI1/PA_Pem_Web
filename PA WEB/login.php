@@ -18,6 +18,7 @@ if (isset($_POST['login'])) {
 
         if (password_verify($password, $row['password'])) {
           $_SESSION['login'] = true;
+          $_SESSION['username'] = $row['username'];
           if ($username == 'admin') {
             echo "
             <script>
@@ -26,7 +27,6 @@ if (isset($_POST['login'])) {
             </script>";
             exit;
           } else {
-            // $_SESSION['username'] = $row['username'];
             echo "
             <script>
                 alert('Login Sebagai User!');
