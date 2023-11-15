@@ -1,9 +1,9 @@
 // dark mode night mode
 
-var element = document.body;
-function ubahWarna() {
-  element.classList.toggle("terang");
-}
+// var element = document.body;
+// function ubahWarna() {
+//   element.classList.toggle("terang");
+// }
 
 // Toggle Class activate Hamburger Menu
 const navbarNav = document.querySelector(".navbar-nav");

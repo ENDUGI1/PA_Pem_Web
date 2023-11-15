@@ -49,9 +49,9 @@ while ($row = mysqli_fetch_assoc($result)){
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
         <a href="#" id="shopping-cart-button"><i data-feather="shopping-bag"></i></a>
-        <a href="#" button class="lightMode" onclick="ubahWarna()"
+        <!-- <a href="#" button class="lightMode" onclick="ubahWarna()"
           ><i data-feather="moon"> </i><i data-feather="sun"></i
-        ></a>
+        ></a> -->
         <a href="login.php" id="login"><i data-feather="log-in"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
