@@ -32,7 +32,7 @@ while ($row = mysqli_fetch_assoc($result)){
 
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="search.css" /> -->
+    
   </head>
   <body>
     <!-- navbar start -->
@@ -49,9 +49,6 @@ while ($row = mysqli_fetch_assoc($result)){
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
         <a href="#" id="shopping-cart-button"><i data-feather="shopping-bag"></i></a>
-        <!-- <a href="#" button class="lightMode" onclick="ubahWarna()"
-          ><i data-feather="moon"> </i><i data-feather="sun"></i
-        ></a> -->
         <a href="login.php" id="login"><i data-feather="log-in"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
@@ -65,34 +62,34 @@ while ($row = mysqli_fetch_assoc($result)){
 
 
       <!-- Shopping cart Start -->
+      <!-- Belum Berfungsi Secara Maximal -->
       <div class="shopping-cart">
         <div class="cart-item">
-          <img src=img/clothes/clothes2.jpg alt="clothes1">
+          <img src=img/clothes/comingsoon.jpg alt="clothes1">
           <div class="item-detail">
-            <h3>Clothes1</h3>
-            <div class="item-price">IDR 130K </div>
+            <h3>Clothes?</h3>
+            <div class="item-price">IDR 0 K </div>
           </div>
           <i data-feather="trash-2" class = "remove-item"></i>
         </div>
         <div class="cart-item">
-          <img src=img/clothes/clothes2.jpg alt="clothes1">
+          <img src=img/clothes/comingsoon.jpg alt="Clothes?">
           <div class="item-detail">
-            <h3>Clothes1</h3>
-            <div class="item-price">IDR 130K </div>
+            <h3>Clothes?</h3>
+            <div class="item-price">IDR 0 K </div>
           </div>
           <i data-feather="trash-2" class = "remove-item"></i>
         </div>
         <div class="cart-item">
-          <img src=img/clothes/clothes2.jpg alt="clothes1">
+          <img src=img/clothes/comingsoon.jpg alt="Clothes?">
           <div class="item-detail">
-            <h3>Clothes1</h3>
-            <div class="item-price">IDR 130K </div>
+            <h3>Clothes?</h3>
+            <div class="item-price">IDR 0 K </div>
           </div>
           <i data-feather="trash-2" class = "remove-item"></i>
         </div>
       </div>
       <!-- Shopping cart End -->
-
     </nav>
 
     <!-- Navbar end -->
@@ -123,15 +120,19 @@ while ($row = mysqli_fetch_assoc($result)){
         <div class="content">
           <h3>Hello Hattrickans</h3>
           <p>
-            My name is <span id="button1">Ahmad Nur Fauzan</span>, and I am a
-            student majoring in Informatics at Mulawarman University,
-            specifically in the Informatics program.
+          We are group 5 B1 of the 2022 cohort, We are students of the Informatics program at Mulawarman University, Samarinda City, East Borneo.
           </p>
           <p>
             We would like to create an interactive and engaging streetwear
             clothing website as part of a practical assignment for my website
             programming course. We hope that all the knowledge We acquire will be
-            beneficial for both myself and others.
+            beneficial for both ourself and others.
+          </p>
+          <p>
+          <span>Our</span> Team:<br>
+            -<span>Ahmad Nur Fauzan</span> (2209106057)<br>
+            -<span>Abdullah Azam</span>   (2209106056)<br>
+            -<span>Umar Farauk Eka</span> (2209106058)
           </p>
         </div>
       </div>
@@ -223,26 +224,6 @@ while ($row = mysqli_fetch_assoc($result)){
           </div>
         </div>
         <?php endforeach ?>
-        <!-- <div class ="clothes-card">
-          <div class="clothes-icons">
-            <a href="#"><i data-feather= "shopping-bag"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
-          </div>
-          <div class="clothes-image">
-            <img src="img/clothes/clothes2.jpg" alt="Clothes 1" >
-          </div>
-          <div class="clothes-content">
-            <h3>T-shirt Music Art </h3>
-            <div class=clothes-stars>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star" class = star-full></i>
-              <i data-feather = "star"></i>
-            </div>
-            <div class="clothes-price">IDR 130K <span>IDR 150K </span> </div>
-          </div>
-        </div> -->
       </div>
 
     </section>
@@ -267,7 +248,7 @@ while ($row = mysqli_fetch_assoc($result)){
         ></iframe>
 
 
-        //Tabel Ke 3 Ada disini:
+        <!-- Tabel Ketiga Ada disini yahhh -->
         <form action="">
           <div class="input-group">
             <i data data-feather="user"></i>
@@ -286,16 +267,11 @@ while ($row = mysqli_fetch_assoc($result)){
             <input type="text" placeholder="Message" />
           </div>
           <button type="submit" class="btn">Send Message</button>
-          <!-- <div class="popup">
-            <img src="/img/checked.png">
-            <h2>Thank You!</h2>
-            <p>Your details has been successfully submitted.</p>
-            <button type="button">OK</button>
-          </div> -->
         </form>
       </div>
     </section>
     <!-- Contact Section End -->
+
 
     <!-- Footer Start -->
     <footer>
@@ -327,7 +303,7 @@ while ($row = mysqli_fetch_assoc($result)){
   <div class="modal-container">
     <a href="#" class="close-icon"><i data-feather="x"></i></a>
     <div class="modal-content">
-      <img src="img/clothes/clothes2.jpg"alt="Clothes 1">
+      <img src="img/clothes/comingsoon.jpg"alt="Clothes 1">
       <div class="clothes-content">
         <h3>Clothes 1</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.

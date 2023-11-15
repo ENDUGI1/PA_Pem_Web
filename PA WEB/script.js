@@ -61,20 +61,22 @@ tombol.addEventListener("click", function () {
 // Mengambil elemen tombol menggunakan DOM
 const button1 = document.getElementById("button1");
 
+
+//UNTUK SEMENTARA TIDAK DIPAKE
 // Menambahkan event listener pada tombol
-button1.addEventListener("click", function () {
-  // Mengecek teks tombol saat ini
-  if (button1.textContent === "Ahmad Nur Fauzan") {
-    // Jika teks tombol adalah "Klik Saya", maka ganti menjadi "Teks Baru"
-    button1.textContent = "@anfauzan";
-    button1.style.color = "blue";
-  } else {
-    // Jika teks tombol bukan "Klik Saya", maka kembalikan ke "Klik Saya"
-    button1.textContent = "Ahmad Nur Fauzan";
-    button1.style.color = "#ee8896";
-    window.open("https://www.instagram.com/anfauzan_/?hl=id", "_blank");
-  }
-});
+// button1.addEventListener("click", function () {
+//   // Mengecek teks tombol saat ini
+//   if (button1.textContent === "Ahmad Nur Fauzan") {
+//     // Jika teks tombol adalah "Klik Saya", maka ganti menjadi "Teks Baru"
+//     button1.textContent = "@anfauzan";
+//     button1.style.color = "blue";
+//   } else {
+//     // Jika teks tombol bukan "Klik Saya", maka kembalikan ke "Klik Saya"
+//     button1.textContent = "Ahmad Nur Fauzan";
+//     button1.style.color = "#ee8896";
+//     window.open("https://www.instagram.com/anfauzan_/?hl=id", "_blank");
+//   }
+// });
 
 //Modal Box
 
