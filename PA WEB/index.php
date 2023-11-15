@@ -28,7 +28,7 @@
         <a href="#home">Home</a>
         <a href="#about">About us</a>
         <a href="#catalog">Products</a>
-        <a href="#stocks">Catalogs</a>
+        <a href="#clothes">Catalogs</a>
         <a href="#contact">Contact</a>
       </div>
 
@@ -193,7 +193,7 @@
             <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
           </div>
           <div class="clothes-image">
-            <img src="img/clothes/clothes1.jpg" alt="Clothes 1" >
+            <img src="img/clothes/clothes2.jpg" alt="Clothes 1" >
           </div>
           <div class="clothes-content">
             <h3>T-shirt Music Art </h3>
@@ -213,7 +213,7 @@
             <a href="#" class="item-detail-button"><i data-feather= "eye"></i></a>
           </div>
           <div class="clothes-image">
-            <img src="img/clothes/clothes1.jpg" alt="Clothes 1" >
+            <img src="img/clothes/clothes2.jpg" alt="Clothes 1" >
           </div>
           <div class="clothes-content">
             <h3>T-shirt Music Art </h3>
@@ -288,7 +288,7 @@
       <div class="links">
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
-        <a href="#catalog">Catalogs</a>
+        <a href="#clothes">Catalogs</a>
         <a href="#contact">Contact</a>
       </div>
 

@@ -52,8 +52,7 @@ if (isset($_POST['login'])) {
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
 
-        $result = mysqli_query($conn, 'SELECT * FROM data_akun WHERE username = "$username"');
-
+        $result = mysqli_query($conn, "SELECT * FROM data_akun WHERE username = '$username'"); // tadi salah di sini pas bisa regis padahal username sudah di pakai
         if(mysqli_fetch_assoc($result)){
             echo "
                 <script>
