@@ -22,7 +22,7 @@ while ($row = mysqli_fetch_assoc($result)){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard-Admin-Endugi-Clothes</title>
+    <title>Dashboard-Admin-hattrick-clothes</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         body {
@@ -246,7 +246,7 @@ while ($row = mysqli_fetch_assoc($result)){
                     <img src="" alt="">
             </section>
             <section class="dash-main">
-                <h1>Admin Endugi Clothes</h1>
+                <h1>Admin Hattrick Clothes</h1>
                 <?php
                 date_default_timezone_set('Asia/Makassar');?>
                 <p>Today: <?php echo date("l, d F Y, H:i:s T"); ?></p>
