@@ -156,7 +156,7 @@ while ($row = mysqli_fetch_assoc($result)){
         <div class="content">
           <h3>Hello Hattrickans</h3>
           <p>
-          We are group 5 B1 of the 2022 cohort, We are students of the Informatics program at Mulawarman University, Samarinda City, East Borneo.
+          We are group 5 B1 of the 2022, We are students of the Informatics program at Mulawarman University, Samarinda City, East Borneo.
           </p>
           <p>
             We would like to create an interactive and engaging streetwear
@@ -316,7 +316,8 @@ while ($row = mysqli_fetch_assoc($result)){
 
       <div class="links">
         <a href="#home">Home</a>
-        <a href="#about">About Us</a>
+        <a href="#about">About us</a>
+        <a href="#catalog">Products</a>
         <a href="#clothes">Catalogs</a>
         <a href="#contact">Contact</a>
       </div>
