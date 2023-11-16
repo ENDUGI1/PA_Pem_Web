@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Nov 2023 pada 12.31
+-- Waktu pembuatan: 16 Nov 2023 pada 12.28
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `endugi_clothes`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `data_akun`
+--
+
+CREATE TABLE `data_akun` (
+  `id` int(100) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `data_akun`
+--
+
+INSERT INTO `data_akun` (`id`, `username`, `password`) VALUES
+(9, 'admin', '$2y$10$IauXz8vmyyubQnvzFs9l8uLDGQYWgD9rATEvqcwtIYLUfqz6JKreq');
 
 -- --------------------------------------------------------
 
@@ -47,9 +66,37 @@ INSERT INTO `data_baju` (`id`, `nama`, `harga`, `warna`, `ukuran`, `gambar`) VAL
 (35, '3-Ply Cashmere Turtleneck Sweater', 3400000, 'Grey', 'L', '2023-10-24.3-Ply Cashmere Turtleneck Sweater.3-ply cashmere turtleneck sweater.jpeg'),
 (36, 'Brushed Wool Raglan Crewneck Sweater', 750000, 'Pink', 'XXL', '2023-10-24.Brushed Wool Raglan Crewneck Sweater.brushed wool raglan crewneck sweater.jpeg');
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `data_kontak`
+--
+
+CREATE TABLE `data_kontak` (
+  `id` int(100) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `nomor_hp` varchar(20) NOT NULL,
+  `pesan` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `data_kontak`
+--
+
+INSERT INTO `data_kontak` (`id`, `nama`, `email`, `nomor_hp`, `pesan`) VALUES
+(11, 'abdullah', 'abdullah@gmail.com', '08123653424', 'Mantap websitenya bisa di tingkatkan lagi'),
+(12, 'udin', 'udin@gmail.com', '085342463564', 'Harus di kembangkan lagi websitenya');
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `data_akun`
+--
+ALTER TABLE `data_akun`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `data_baju`
@@ -58,14 +105,32 @@ ALTER TABLE `data_baju`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `data_kontak`
+--
+ALTER TABLE `data_kontak`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `data_akun`
+--
+ALTER TABLE `data_akun`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `data_baju`
 --
 ALTER TABLE `data_baju`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+
+--
+-- AUTO_INCREMENT untuk tabel `data_kontak`
+--
+ALTER TABLE `data_kontak`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
