@@ -41,11 +41,11 @@ CREATE TABLE `data_baju` (
 --
 
 INSERT INTO `data_baju` (`id`, `nama`, `harga`, `warna`, `ukuran`, `gambar`) VALUES
-(32, 'Mock Neck Short Sleeve T-Shirts', 300000, 'Khaki', 'L', '2023-10-24.Mock Neck Short Sleeve T-Shirts.b2804f2915a4c7e284aa05be5caecdad.jpg'),
-(33, 'Cotton Ukiyoe Print Round T-Shirt', 644000, 'Black', 'XL', '2023-10-24.Cotton Ukiyoe Print Round T-Shirt.cotton ukiyoe print round t-shirt.jpg'),
-(34, '3-Ply Cashmere Cardigan Sweater', 2500000, 'Navy', 'M', '2023-10-24.3-Ply Cashmere Cardigan Sweater.3-ply cashmere cardigan sweater.jpeg'),
-(35, '3-Ply Cashmere Turtleneck Sweater', 3400000, 'Grey', 'L', '2023-10-24.3-Ply Cashmere Turtleneck Sweater.3-ply cashmere turtleneck sweater.jpeg'),
-(36, 'Brushed Wool Raglan Crewneck Sweater', 750000, 'Pink', 'XXL', '2023-10-24.Brushed Wool Raglan Crewneck Sweater.brushed wool raglan crewneck sweater.jpeg');
+(1, 'Mock Neck Short Sleeve T-Shirts', 300000, 'Khaki', 'L', '2023-10-24.Mock Neck Short Sleeve T-Shirts.b2804f2915a4c7e284aa05be5caecdad.jpg'),
+(2, 'Cotton Ukiyoe Print Round T-Shirt', 644000, 'Black', 'XL', '2023-10-24.Cotton Ukiyoe Print Round T-Shirt.cotton ukiyoe print round t-shirt.jpg'),
+(3, '3-Ply Cashmere Cardigan Sweater', 2500000, 'Navy', 'M', '2023-10-24.3-Ply Cashmere Cardigan Sweater.3-ply cashmere cardigan sweater.jpeg'),
+(4, '3-Ply Cashmere Turtleneck Sweater', 3400000, 'Grey', 'L', '2023-10-24.3-Ply Cashmere Turtleneck Sweater.3-ply cashmere turtleneck sweater.jpeg'),
+(5, 'Brushed Wool Raglan Crewneck Sweater', 750000, 'Pink', 'XXL', '2023-10-24.Brushed Wool Raglan Crewneck Sweater.brushed wool raglan crewneck sweater.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +65,7 @@ ALTER TABLE `data_baju`
 -- AUTO_INCREMENT for table `data_baju`
 --
 ALTER TABLE `data_baju`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

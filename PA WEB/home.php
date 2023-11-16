@@ -20,7 +20,7 @@ while ($row = mysqli_fetch_assoc($result)){
 <?php
   require 'koneksi.php';
   if (isset($_POST['kontak'])) {
-    # code...
+    
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $nomor_hp = $_POST['nomor_hp'];
@@ -31,14 +31,14 @@ while ($row = mysqli_fetch_assoc($result)){
       echo "
           <script>
               alert('Pesan berhasil ditambahkan!');
-              document.location.href = 'index.php';
+              document.location.href = 'home.php';
           </script>
       ";
     } else {
         echo "
             <script>
                 alert('Gagal menambahkan Pesan. Silakan coba lagi.');
-                document.location.href = 'index.php';
+                document.location.href = 'home.php';
             </script>
         ";
     }
@@ -262,8 +262,8 @@ while ($row = mysqli_fetch_assoc($result)){
     <section id="contact" class="contact">
       <h2><span>Contact</span> Us</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-        blanditiis laboriosam consequatur error deserunt facere?
+      Telling Truths, Building Better: Your Feedback Shapes Our Future.
+      Critiques and Suggestions, the Catalysts for Change at Your Service.
       </p>
       <div class="row">
         <iframe

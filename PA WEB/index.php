@@ -23,7 +23,7 @@ while ($row = mysqli_fetch_assoc($result)){
 <?php
   require 'koneksi.php';
   if (isset($_POST['kontak'])) {
-    # code...
+    
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $nomor_hp = $_POST['nomor_hp'];
@@ -337,9 +337,8 @@ while ($row = mysqli_fetch_assoc($result)){
       <img src="img/clothes/comingsoon.jpg"alt="Clothes 1">
       <div class="clothes-content">
         <h3>Clothes 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Culpa quisquam alias nam, recusandae nostrum esse,
-            rem praesentium, distinctio ad minus accusamus eius maiores tempore sed?</p>
+        <p>Telling Truths, Building Better: Your Feedback Shapes Our Future.
+           Critiques and Suggestions, the Catalysts for Change at Your Service</p>
             <div class=clothes-stars>
               <i data-feather = "star" class = star-full></i>
               <i data-feather = "star" class = star-full></i>

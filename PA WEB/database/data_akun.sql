@@ -38,9 +38,9 @@ CREATE TABLE `data_akun` (
 --
 
 INSERT INTO `data_akun` (`id`, `username`, `password`) VALUES
-(3, 'abdi', '$2y$10$TSvy.vLh6VV6nkJ6KrcBJOaU3UqUQgUCQaNJ9c03jOuXg3b.QD5wC'),
-(4, 'fauzan', '$2y$10$Fn50Gt3wyIX0CjanmeYguupgHfiWooJ1l4ebsiMk.F905EkGqwCS2'),
-(5, 'fauzan ganteng', '$2y$10$.NKIB55gRdrfosRS/JYAmeMK6SdsiSedQbQm/eMC/OovyucbiXk5e');
+(1, 'abdi', '$2y$10$TSvy.vLh6VV6nkJ6KrcBJOaU3UqUQgUCQaNJ9c03jOuXg3b.QD5wC'),
+(2, 'fauzan', '$2y$10$Fn50Gt3wyIX0CjanmeYguupgHfiWooJ1l4ebsiMk.F905EkGqwCS2'),
+(3, 'fauzan ganteng', '$2y$10$.NKIB55gRdrfosRS/JYAmeMK6SdsiSedQbQm/eMC/OovyucbiXk5e');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +60,7 @@ ALTER TABLE `data_akun`
 -- AUTO_INCREMENT for table `data_akun`
 --
 ALTER TABLE `data_akun`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
