@@ -26,7 +26,7 @@ if (isset($_POST['tambah'])) {
     
         if (move_uploaded_file($tmp,'img/assets/'.$gambar_baru)) {
             $result = mysqli_query($conn, "INSERT INTO data_baju (id, nama, harga, warna, ukuran, gambar) 
-            values('', '$nama', '$harga', '$warna', '$ukuran', '$gambar_baru')");
+            values(NULL, '$nama', '$harga', '$warna', '$ukuran', '$gambar_baru')");
                 if ($result) {
                     echo "
                     <script>

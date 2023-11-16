@@ -26,7 +26,7 @@ while ($row = mysqli_fetch_assoc($result)){
     $nomor_hp = $_POST['nomor_hp'];
     $pesan = $_POST['pesan'];
 
-    $result = mysqli_query($conn, "INSERT INTO data_kontak VALUES ('', '$nama', '$email', '$nomor_hp', '$pesan')");
+    $result = mysqli_query($conn, "INSERT INTO data_kontak VALUES (NULL, '$nama', '$email', '$nomor_hp', '$pesan')");
     if ($result) {
       echo "
           <script>

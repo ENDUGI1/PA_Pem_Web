@@ -79,7 +79,7 @@ if (isset($_POST['login'])) {
             if($password === $cpassword){
                 $password = password_hash($password, PASSWORD_DEFAULT);
 
-                $result = mysqli_query($conn, "INSERT INTO data_akun VALUES ('', '$username', '$password')");
+                $result = mysqli_query($conn, "INSERT INTO data_akun VALUES (NULL, '$username', '$password')");
                 if(mysqli_affected_rows($conn) > 0){
                     echo "
                         <script>

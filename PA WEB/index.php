@@ -29,7 +29,7 @@ while ($row = mysqli_fetch_assoc($result)){
     $nomor_hp = $_POST['nomor_hp'];
     $pesan = $_POST['pesan'];
 
-    $result = mysqli_query($conn, "INSERT INTO data_kontak VALUES ('', '$nama', '$email', '$nomor_hp', '$pesan')");
+    $result = mysqli_query($conn, "INSERT INTO data_kontak VALUES (NULL, '$nama', '$email', '$nomor_hp', '$pesan')");
     if ($result) {
       echo "
           <script>
@@ -151,7 +151,7 @@ while ($row = mysqli_fetch_assoc($result)){
 
       <div class="row">
         <div class="about-img">
-          <img src="./img/kelompok5.JPG" alt="About Me" />
+          <img src="./img/kelompok5.jpg" alt="About Me" />
         </div>
         <div class="content">
           <h3>Hello Hattrickans</h3>
