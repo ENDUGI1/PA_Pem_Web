@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2023 at 07:35 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Waktu pembuatan: 16 Nov 2023 pada 12.30
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_akun`
+-- Struktur dari tabel `data_akun`
 --
 
 CREATE TABLE `data_akun` (
@@ -34,33 +34,31 @@ CREATE TABLE `data_akun` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `data_akun`
+-- Dumping data untuk tabel `data_akun`
 --
 
 INSERT INTO `data_akun` (`id`, `username`, `password`) VALUES
-(1, 'abdi', '$2y$10$TSvy.vLh6VV6nkJ6KrcBJOaU3UqUQgUCQaNJ9c03jOuXg3b.QD5wC'),
-(2, 'fauzan', '$2y$10$Fn50Gt3wyIX0CjanmeYguupgHfiWooJ1l4ebsiMk.F905EkGqwCS2'),
-(3, 'fauzan ganteng', '$2y$10$.NKIB55gRdrfosRS/JYAmeMK6SdsiSedQbQm/eMC/OovyucbiXk5e');
+(9, 'admin', '$2y$10$IauXz8vmyyubQnvzFs9l8uLDGQYWgD9rATEvqcwtIYLUfqz6JKreq');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `data_akun`
+-- Indeks untuk tabel `data_akun`
 --
 ALTER TABLE `data_akun`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `data_akun`
+-- AUTO_INCREMENT untuk tabel `data_akun`
 --
 ALTER TABLE `data_akun`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
