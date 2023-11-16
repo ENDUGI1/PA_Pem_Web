@@ -50,7 +50,7 @@ Untuk menambah barang silahkan klik tombol Tambah. Maka akan muncul halaman Tamb
 <img src="screenshot/halaman_tambah_data.jpg"> <br>
 Selanjutnya silahkan masukkan Data Barang yang ingin di tambahkan. <br>
 > [!NOTE]
-> Harga barang Tidak bisa < Rp 10.000
-> Hanya File Gambar yang dapat di Upload.
+> 1. Harga barang Tidak bisa < Rp 10.000 <br>
+> 2. Hanya File Gambar yang dapat di Upload.
 
 Jika sudah klik tombol Tambah Data untuk menambahkan barang.
