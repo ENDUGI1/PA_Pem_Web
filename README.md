@@ -35,7 +35,9 @@ Lalu tekan tombol Login untuk melakukan Login.
 
 ### 3. Logout
 
-Untuk melakukan Logout silahkan klik tombol <sub><img src="screenshot/icon_logout_user.jpg" width="24px" height="24px"></sub> yang berada di atas sebelah kanan website. Maka akan kembali ke halaman index seperti berikut : <br>
+Untuk melakukan Logout silahkan klik tombol <sub><img src="screenshot/icon_logout_user.jpg" width="24px" height="24px"></sub> yang berada di atas sebelah kanan website. <br>
+<img src="screenshot/halaman_logout.png"> <br>
+Maka akan kembali ke halaman index seperti berikut : <br>
 <img src="screenshot/halaman_index.jpg"> <br>
 
 ### 4. Mengirim Pesan Ke Admin
@@ -106,4 +108,4 @@ Untuk melakukan Hapus Pesan bisa mengklik tombol <sub><img src="screenshot/hapus
 ### 8. Logout
 
 Untuk melakukan Logout silahkan klik tombol Logout. Maka akan kembali ke halaman index seperti berikut : <br>
-<img src="screenshot/halaman_logout.png"> <br>
+<img src="screenshot/halaman_index.jpg"><br>
