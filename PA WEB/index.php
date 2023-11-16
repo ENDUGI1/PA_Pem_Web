@@ -152,7 +152,7 @@ while ($row = mysqli_fetch_assoc($result)){
 
       <div class="row">
         <div class="about-img">
-          <img src="./img/aboutme-bg.JPG" alt="About Me" />
+          <img src="./img/kelompok5.JPG" alt="About Me" />
         </div>
         <div class="content">
           <h3>Hello Hattrickans</h3>
