@@ -56,4 +56,23 @@ Selanjutnya silahkan masukkan Data Barang yang ingin di tambahkan. <br>
 Jika sudah klik tombol Tambah Data untuk menambahkan barang.
 
 ### 4. Update Barang
-Untuk melakukan Edit Barang bisa mengklik tombol <sub><img src="screenshot/edit.jpg" width="24px" height="24px"></sub> yang tersedia di sebelah kanan barang yang ingin di Update. <br>
+Untuk melakukan Update Barang bisa mengklik tombol <sub><img src="screenshot/edit.jpg" width="24px" height="24px"></sub> yang tersedia di sebelah kanan barang yang ingin di Update. <br>
+Maka akan muncul halaman Update Barang seperti berikut : <br>
+<img src="screenshot/halaman_ubah_data.jpg"> <br>
+Selanjutnya silahkan masukkan Data Barang yang ingin di Update. <br>
+> [!NOTE]
+> 1. Harga barang Tidak bisa < Rp 10.000 <br>
+> 2. Hanya File Gambar yang dapat di Upload.
+
+Jika sudah klik tombol Edit Data untuk Update barang.
+
+### 5. Delete Barang
+Untuk melakukan Hapus Barang bisa mengklik tombol <sub><img src="screenshot/hapus.jpg" width="24px" height="24px"></sub> yang tersedia di sebelah kanan barang yang ingin di Hapus. Maka barang akan langsung terhapus dari Data Barang.
+
+### 6. Lihat Pesan
+Untuk melihat pesan silahkan klik tombol Lihat Pesan. Maka akan muncul Halaman Pesan yang berisi semua pesan yang dikirimkan oleh pengguna seperti berikut : <br>
+<!-- nanti dikasih gambarnya (belum di css phpnya) -->
+
+### 7. Logout
+Untuk melakukan Logout silahkan klik tombol Logout. Maka akan kembali ke halaman index seperti berikut : <br>
+<!-- halaman index (belum ubah loreipsumnya) -->
