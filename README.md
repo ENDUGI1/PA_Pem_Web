@@ -13,6 +13,7 @@ cara penggunaan website
 
 ## User
 ### 1. Untuk Registrasi
-Untuk melakukan registrasi bisa mengklik tombol <sub>![Logo](https://github.com/ENDUGI1/PA_Pem_Web/blob/main/icon/log-in.jpg)</sub> yang tersedia di bagian atas sebelah kanan website. 
+Untuk melakukan registrasi bisa mengklik tombol <sub>![Logo](https://github.com/ENDUGI1/PA_Pem_Web/blob/main/screenshot/log-in.jpg)</sub> yang tersedia di bagian atas sebelah kanan website. Setelah itu akan tampil halaman Registrasi seperti berikut
+<img src="/icon/log-in.jpg">
 
 ## Admin
