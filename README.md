@@ -1,6 +1,6 @@
 # PROJEK AKHIR PEMROGRAMAN WEB
 
-- Judul Program : [Toko Pakaian / Hattrick Clothes](https://endugiclothes.duckdns.org/PA%20WEB/)
+- Judul Program : [Toko Pakaian / Hattrick Clothes](http://167.172.85.250/PA%20WEB/)
 - Anggota Kelompok :
   - Ahmad Nur Fauzan / 2209106057(Ketua)
   - Umar Farauk Eka Putra / 2209106058
