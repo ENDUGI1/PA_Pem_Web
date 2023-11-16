@@ -27,5 +27,5 @@ Setelah itu login dengan username dan password anda.
 ### 3. Mengirim Pesan Ke Admin
 Untuk mengirim pesan ke admin silahkan scroll halaman website sampai pada bagian berikut :<br>
 <img src="screenshot/kirim_pesan.jpg"> <br>
-Setelah itu silahkan mengisi Nama, Email, Nomor HP, dan tuliskan pesan yang akan di sampaikan. Lalu tekan tombol Send Message
+Setelah itu silahkan mengisi Nama, Email, Nomor HP, dan tuliskan pesan yang akan di sampaikan. Lalu tekan tombol Send Message untuk mengirimkan pesan.
 ## Admin
