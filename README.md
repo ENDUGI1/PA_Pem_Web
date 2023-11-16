@@ -54,3 +54,6 @@ Selanjutnya silahkan masukkan Data Barang yang ingin di tambahkan. <br>
 > 2. Hanya File Gambar yang dapat di Upload.
 
 Jika sudah klik tombol Tambah Data untuk menambahkan barang.
+
+### 4. Update Barang
+Untuk melakukan Edit Barang bisa mengklik tombol <sub><img src="screenshot/edit.jpg" width="24px" height="24px"></sub> yang tersedia di sebelah kanan barang yang ingin di Update. <br>
