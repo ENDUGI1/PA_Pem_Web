@@ -284,7 +284,7 @@ while ($row = mysqli_fetch_assoc($result)){
                         <?php $i++; endforeach;?>
                     </tbody>
                 </table>
-                <a class="link" href="index.php">Back To Store</a><br/>
+                
             </section>
         </main>
         

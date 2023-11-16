@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
             echo "
             <script>
                 alert('Login Sebagai User!');
-                document.location.href = 'index.php';
+                document.location.href = 'home.php';
             </script>";
             exit;
           }

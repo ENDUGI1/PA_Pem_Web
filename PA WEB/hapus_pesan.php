@@ -13,13 +13,13 @@ if ($result) {
     echo "
     <script>
         alert('Data berhasil Hapus!');
-        document.location.href = 'dashboard.php'
+        document.location.href = 'kontak.php'
     </script>";
 } else {
     echo "
     <script>
         alert('Data Gagal Hapus!');
-        document.location.href = 'dashboard.php'
+        document.location.href = 'kontak.php'
     </script>";
 }
 

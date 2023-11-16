@@ -1,12 +1,18 @@
-<!-- untuk nampilkan kontak (kalau perlu) -->
-<!-- belum pake session biar bisa langsung aja :) -->
-
 <?php
+session_start();
+if (!isset($_SESSION['login']) || ($_SESSION['login'] !== true) || (isset($_SESSION['username']) && $_SESSION['username'] !== 'admin')){
+    header('Location: index.php');
+    exit();
+}
 require 'koneksi.php';
 
 // Mendapatkan semua data dari tabel data_kontak
 $result = mysqli_query($conn, "SELECT * FROM data_kontak");
-$data_kontak = mysqli_fetch_all($result, MYSQLI_ASSOC);
+$data_kontak = [];
+
+while ($row = mysqli_fetch_assoc($result)){
+    $data_kontak[] = $row;
+}
 
 ?>
 
@@ -247,8 +253,6 @@ $data_kontak = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 <hr><br>
                 <div class="leading-btn">
                     <a href = "dashboard.php"><button class="add-btn">Kembali</button></a>
-                    <a href = "tambah.php"><button class="add-btn">Tambah</button></a>
-                    <a href = "logout.php"><button class="add-btn">Logout</button></a>
                 </div><br>
                 <table>
                     <thead>
@@ -269,13 +273,13 @@ $data_kontak = mysqli_fetch_all($result, MYSQLI_ASSOC);
                             <td><?php echo $data_kontak["nomor_hp"] ?></td> 
                             <td><?php echo $data_kontak["pesan"] ?></td>                     
                             <td class="action">
-                                <a href="hapus.php?id=<?php echo $data_kontak["id"] ?>"><button name="hapus" class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button></a>
+                                <a href="hapus_pesan.php?id=<?php echo $data_kontak["id"] ?>"><button name="hapus" class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button></a>
                             </td>
                         </tr>
                         <?php $i++; endforeach;?>
                     </tbody>
                 </table>
-                <a class="link" href="index.php">Back To Store</a><br/>
+                
             </section>
         </main>
         
