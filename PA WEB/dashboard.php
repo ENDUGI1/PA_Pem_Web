@@ -207,6 +207,7 @@ while ($row = mysqli_fetch_assoc($result)){
         }
 
         /* Mengubah tampilan sidebar */
+
         .dash-side-bar {
             display: none;
         }
@@ -215,6 +216,12 @@ while ($row = mysqli_fetch_assoc($result)){
         .dash-container {
             width: 100%;
             padding: 10px;
+        }
+
+        table td img {
+            display: block;
+            max-width: 85%; /* Membuat gambar tidak melebihi lebar parent */
+            height: auto; /* Menjaga aspek rasio gambar */
         }
 
         /* Mengubah tampilan tombol untuk tata letak vertikal */
