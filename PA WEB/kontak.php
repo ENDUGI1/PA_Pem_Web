@@ -261,7 +261,7 @@ while ($row = mysqli_fetch_assoc($result)){
                 <table>
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>No</th>
                             <th>Nama</th>
                             <th>Email</th>
                             <th>Nomor Hp</th>
