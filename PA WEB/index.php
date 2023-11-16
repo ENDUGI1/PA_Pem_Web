@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+if (isset($_SESSION['login'])){
+    header('Location: logout.php');
+    exit();
+}
+session_unset();
+session_destroy();
 require 'koneksi.php';
 
 $result = mysqli_query($conn, "SELECT * FROM data_baju");
