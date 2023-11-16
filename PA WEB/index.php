@@ -136,8 +136,7 @@ while ($row = mysqli_fetch_assoc($result)){
       <main class="content">
         <h1>Discover Streetwear Excellence with Hattrick <span>Clothes</span></h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-          architecto.
+        Find Your Style: Choose Your Outfit at Hattrick Clothes!
         </p>
         <a href="#" id="tombol" class="cta">Buy Now</a>
       </main>
@@ -180,8 +179,7 @@ while ($row = mysqli_fetch_assoc($result)){
     <section id="catalog" class="catalog">
       <h2><span>Our</span> Products</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore
-        fugit, provident fuga
+      Find Your Style: Choose Your Outfit at Hattrick Clothes!
       </p>
       <div class="row">
         <div class="catalog-card">
@@ -233,11 +231,6 @@ while ($row = mysqli_fetch_assoc($result)){
     <!-- barang ready Section Start -->
     <section class="clothes" id="clothes">
       <h2><span>Available </span>Clothes</h2>
-      <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Alias beatae perferendis consequuntur molestiae.
-      </p>
-
       <div class = "row">
       <?php $i = 1; foreach($data_baju as $data_baju) :?>
         <div class ="clothes-card">
@@ -272,8 +265,8 @@ while ($row = mysqli_fetch_assoc($result)){
     <section id="contact" class="contact">
       <h2><span>Contact</span> Us</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-        blanditiis laboriosam consequatur error deserunt facere?
+      Telling Truths, Building Better: Your Feedback Shapes Our Future.
+       Critiques and Suggestions, the Catalysts for Change at Your Service
       </p>
       <div class="row">
         <iframe

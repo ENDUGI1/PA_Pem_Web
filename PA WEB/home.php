@@ -133,8 +133,7 @@ while ($row = mysqli_fetch_assoc($result)){
       <main class="content">
         <h1>Discover Streetwear Excellence with Hattrick <span>Clothes</span></h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-          architecto.
+        Style Strikes Threefold: Hattrick Clothes - Your Fashion Score!
         </p>
         <a href="#" id="tombol" class="cta">Buy Now</a>
       </main>
@@ -149,12 +148,12 @@ while ($row = mysqli_fetch_assoc($result)){
 
       <div class="row">
         <div class="about-img">
-          <img src="./img/aboutme-bg.JPG" alt="About Me" />
+          <img src="./img/kelompok5.JPG" alt="About Me" />
         </div>
         <div class="content">
           <h3>Hello Hattrickans</h3>
           <p>
-          We are group 5 B1 of the 2022 cohort, We are students of the Informatics program at Mulawarman University, Samarinda City, East Borneo.
+          We are group 5 B1 of the 2022, We are students of the Informatics program at Mulawarman University, Samarinda City, East Borneo.
           </p>
           <p>
             We would like to create an interactive and engaging streetwear
@@ -177,8 +176,7 @@ while ($row = mysqli_fetch_assoc($result)){
     <section id="catalog" class="catalog">
       <h2><span>Our</span> Products</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore
-        fugit, provident fuga
+      Find Your Style: Choose Your Outfit at Hattrick Clothes!
       </p>
       <div class="row">
         <div class="catalog-card">
@@ -230,11 +228,6 @@ while ($row = mysqli_fetch_assoc($result)){
     <!-- barang ready Section Start -->
     <section class="clothes" id="clothes">
       <h2><span>Available </span>Clothes</h2>
-      <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Alias beatae perferendis consequuntur molestiae.
-      </p>
-
       <div class = "row">
       <?php $i = 1; foreach($data_baju as $data_baju) :?>
         <div class ="clothes-card">
@@ -341,9 +334,8 @@ while ($row = mysqli_fetch_assoc($result)){
       <img src="img/clothes/comingsoon.jpg"alt="Clothes 1">
       <div class="clothes-content">
         <h3>Clothes 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Culpa quisquam alias nam, recusandae nostrum esse,
-            rem praesentium, distinctio ad minus accusamus eius maiores tempore sed?</p>
+        <p>Telling Truths, Building Better: Your Feedback Shapes Our Future.
+           Critiques and Suggestions, the Catalysts for Change at Your Service</p>
             <div class=clothes-stars>
               <i data-feather = "star" class = star-full></i>
               <i data-feather = "star" class = star-full></i>
