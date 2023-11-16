@@ -313,7 +313,8 @@ while ($row = mysqli_fetch_assoc($result)){
 
       <div class="links">
         <a href="#home">Home</a>
-        <a href="#about">About Us</a>
+        <a href="#about">About us</a>
+        <a href="#catalog">Products</a>
         <a href="#clothes">Catalogs</a>
         <a href="#contact">Contact</a>
       </div>

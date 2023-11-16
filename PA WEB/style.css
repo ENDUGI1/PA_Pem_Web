@@ -117,7 +117,7 @@ body {
 .shopping-cart {
   position: absolute;
   top: 100%;
-  right: -100%; 
+  right: -100%;
   height: 100vh;
   width: 35rem;
   padding: 0 1.5rem;
@@ -551,7 +551,7 @@ footer .credit a {
 }
 
 .modal-content img {
-  height: 20rem;
+  height: 18rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
